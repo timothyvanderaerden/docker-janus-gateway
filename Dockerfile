@@ -20,7 +20,7 @@ RUN git clone https://github.com/sctplab/usrsctp \
   && make && make install
 
 # Install Janus WebRTC server
-RUN git clone https://github.com/meetecho/janus-gateway.git \
+RUN git clone https://github.com/meetecho/janus-gateway.git --branch=v0.9.5 \
   && cd janus-gateway \
   && sh autogen.sh \
   && ./configure --prefix=/opt/janus \
